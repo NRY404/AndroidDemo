@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?actionMenuTextColor"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note_data_title_layout">
+
+        <EditText
+            android:id="@+id/note_data_title"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@+id/note_complete_btn"
+            android:background="@null"
+            android:textColor="?editTextColor"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/note_complete_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/add_btn" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/note_text_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/note_data_title_layout"
+        android:background="#000000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/note_data_content"
+        android:layout_below="@+id/note_text_line"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:gravity="left"
+        android:textColor="?editTextColor"
+        />
+</RelativeLayout>

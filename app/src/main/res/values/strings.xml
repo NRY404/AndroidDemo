@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MyMemo</string>
+    <string-array name="spinner">
+        <item>灰白</item>
+        <item>米黄</item>
+        <item>夜晚</item>
+    </string-array>
 </resources>
